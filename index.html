@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Start navigation bar-->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__items">
+                    <input type="checkbox" id="navbar__dropdown-toggle">
+                    <label for="navbar__dropdown-toggle" class="modal"></label>
+                    <label for="navbar__dropdown-toggle" href="#" onclick="dropDownFunction()" class="navbar__items-item-menu">
+                        <abbr title="Menu"><ion-icon class="navbar__menu-icon" name="menu"></ion-icon></abbr>
+                    </label>
+
+                    <div class="navbar__dropdown" id="myNavbar__items-item-menu">
+                        <div class="navbar__dropdown-wrapper">
+                            <label for="navbar__dropdown-toggle" class="navbar__dropdown-return">
+                                <ion-icon class="navbar__dropdown-return-icon" name="chevron-back-outline"></ion-icon>
+                                <p>Close Menu</p>
+                            </label>
+                            <ul class="navbar__dropdown-options">
+                                <li class="navbar__dropdown-option">
+                                    <a href="" class="navbar-dropdown-option-link">Home</a>
+                                </li>
+                                <li class="navbar__dropdown-option">
+                                    <a href="" class="navbar-dropdown-option-link">Top</a>
+                                </li>
+                                <li class="navbar__dropdown-option">
+                                    <a href="" class="navbar-dropdown-option-link">Movies</a>
+                                </li>
+                                <li class="navbar__dropdown-option">
+                                    <a href="" class="navbar-dropdown-option-link">TV Shows</a>
+                                </li>
+                                <li class="navbar__dropdown-option">
+                                    <a href="" class="navbar-dropdown-option-link">Android App</a>
+                                </li>
+                                <li class="navbar__dropdown-option">
+                                    <a href="" class="navbar-dropdown-option-link">Genre <ion-icon name="add-outline" class="option-link-plus-icon"></ion-icon></a>
+                                </li>
+                                <li class="navbar__dropdown-option">
+                                    <a href="" class="navbar-dropdown-option-link">Country <ion-icon name="add-outline" class="option-link-plus-icon"></ion-icon></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="navbar__items-item-logo">
+                        <abbr title="Cineb logo"><img class="navbar__cineb-logo" src="./assets/img/logo.png" alt="Cineb Logo"></abbr>
+                    </a>
+                    <a href="" class="navbar__user">
+                        <ion-icon class="navbar__user-icon" name="person"></ion-icon>
+                        <span>Login</span>
+                    </a>
+                </div>
+                <div class="navbar__wrapper-input">
+                    <input class="navbar__text-box" type="text" placeholder="Enter Keywords">
+                </div>
+            </div>
+        </nav>
+        <!-- End navigation bar-->
+        <section>
+            <div class="container">
+                <section>
+                    <div class="container__wrapper">
+                        <div class="speech">
+                            <div class="speech-wrapper c-12">
+                                <p class="speech__text">Ever wanted to watch free movies online? Then look no further. Watch movies of various categories only here. Stream HD quality movies on your TV, laptop or mobile. Here you can watch the movies of your choice without any
+                                    registration or signups - most hassle-free option. Stop visiting terrible sites that promise movies in HD and 4K quality and serve you crap, and waste your time and energy. You can easily search the movies of your choice
+                                    here- from blockbusters to rare critically- acclaimed gems, we have them all. We promise regular uploads. So, your favorite movie is just a click away! Think no more, start streaming.</p>
+                                <div class="wrapper__more">
+                                    <a class="speech__text-more" href="">More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social_media">
+                            <div class="social_media-wrapper">
+                                <a href="" class="social_media__item"> <img src="./assets/img/twitter.png" alt="twitter"> </a>
+                                <a href="" class="social_media__item"><img src="./assets/img/facebook.png" alt="facebook"></a>
+                                <a href="" class="social_media__item"><img src="./assets/img/whatsapp.png" alt="whatsapp"></a>
+                                <a href="" class="social_media__item"><img src="./assets/img/pinterest.png" alt="pinterest"></a>
+                                <a href="" class="social_media__item"><img src="./assets/img/telegram.png" alt="telegram"></a>
+                                <a href="" class="social_media__item"><img src="./assets/img/gmail.png" alt="gmail"></a>
+                                <a href="" class="social_media__item"><img src="./assets/img/plus-icon.png" alt="add"></a>
+                            </div>
+                        </div>
+                        <h1 class="Featured-tittle">Featured</h1>
+                        <div class="films">
+                            <div class="grid wide">
+                                <div class="row">
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Moon Knight.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Moon Knight
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>SS 1</p>
+                                                    <p>&bull; </p>
+                                                    <p>EPS 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Morbius.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Morbius
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2022</p>
+                                                    <p>&bull; </p>
+                                                    <p>104m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Spider-man-no-way-home.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Spider-Man No way home
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>148m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/The-bat-man.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    The Batman
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2022</p>
+                                                    <p>&bull; </p>
+                                                    <p>176m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/The-Adam-Project.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    The Adam project
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2022</p>
+                                                    <p>&bull; </p>
+                                                    <p>106m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Dune.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Dune
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>155m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Doctor-Strange.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Doctor Strange
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2016</p>
+                                                    <p>&bull; </p>
+                                                    <p>115m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Apolllo 10.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Apolllo 10
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2022</p>
+                                                    <p>&bull; </p>
+                                                    <p>98m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Dune.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Dune
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>155m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Dune.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Dune
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>155m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Dune.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Dune
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>155m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Dune.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Dune
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>155m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Dune.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Dune
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>155m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wide l-2-4 m-4 c-6">
+                                        <div class="films-wrapper">
+                                            <div class="films__wrapper-content">
+                                                <img src="./assets/img/Films/Dune.jpg" alt="Moon Knight">
+                                                <div class="films__player-icon">
+                                                    <a href="#">
+                                                        <ion-icon name="play"></ion-icon>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="films__wrapper-details">
+                                                <h1 class="films__wrapper-details-name">
+                                                    Dune
+                                                </h1>
+                                                <div class="films__wrapper-details-seasons">
+                                                    <span>HD</span>
+                                                    <p>2021</p>
+                                                    <p>&bull; </p>
+                                                    <p>155m</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <div class="top-rating">
+                        <div class="top-rating-wrapper">
+
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    </div>
+
+    <script src=" ./assets/js/main.js "></script>
+</body>
+
+</html>

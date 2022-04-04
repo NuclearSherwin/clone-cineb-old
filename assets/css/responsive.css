@@ -1,0 +1,108 @@
+@media (min-width:320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (min-width:480px) {
+    /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (min-width:600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .navbar__container .navbar__items {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 2%;
+    }
+    .navbar__wrapper-input .navbar__text-box {
+        margin-bottom: 3%;
+    }
+    .navbar__dropdown {
+        max-width: 60%;
+    }
+}
+
+@media (min-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .navbar__container .navbar__items {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 1%;
+    }
+    .navbar__wrapper-input .navbar__text-box {
+        margin-bottom: 2.7%;
+    }
+    .navbar__dropdown {
+        max-width: 40%;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    .navbar__container .navbar__items {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 1%;
+    }
+    .navbar__wrapper-input .navbar__text-box {
+        margin-bottom: 2%;
+    }
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+    .navbar__wrapper-input .navbar__text-box {
+        max-width: 28%;
+        border-radius: 50px;
+    }
+    .navbar__wrapper-input {
+        text-align: center;
+        position: relative;
+        top: -70px;
+    }
+    .navbar__container {
+        max-height: 90px;
+    }
+    .navbar__container .navbar__items {
+        padding-top: 1.3%;
+    }
+    .navbar__items-item-logo .navbar__cineb-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar__items-item-menu .navbar__menu-icon {
+        width: 33px;
+        height: 33px;
+        color: white;
+        margin-right: 20px;
+        margin-left: 55px;
+    }
+    .navbar__items-item-menu {
+        z-index: 11;
+    }
+    .navbar__dropdown {
+        max-width: 20%;
+    }
+    .speech-wrapper {
+        background-color: #fff;
+        overflow: hidden;
+        padding: 15px;
+        height: 80px;
+        max-height: 80px;
+        /* text-overflow: ellipsis; */
+        /* white-space: nowrap; */
+        /* -webkit-line-clamp: 2; */
+        /* display: -webkit-box; */
+        /* line-height: 22px; */
+        /* -webkit-box-orient: vertical; */
+        display: block;
+    }
+    .speech {
+        margin-top: -49px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    /* .films {
+        margin-left: 40px;
+        margin-right: 40px;
+    } */
+}
